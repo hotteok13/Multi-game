@@ -506,7 +506,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 626165716}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1683631156}
+        m_TargetAssemblyTypeName: PhotonSetting, Assembly-CSharp
+        m_MethodName: Login
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &626165716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1659,6 +1671,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1683631155}
+  - component: {fileID: 1683631156}
   m_Layer: 0
   m_Name: Photon Setting
   m_TagString: Untagged
@@ -1680,6 +1693,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1683631156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683631154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7f57b3a4ef6bc4882e8b8dd9f28d21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  email: {fileID: 1172085375}
+  password: {fileID: 405729351}
+  username: {fileID: 1248245583}
+  region: {fileID: 1065172001}
 --- !u!1 &1694439879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,7 +1870,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1804334822}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1683631156}
+        m_TargetAssemblyTypeName: PhotonSetting, Assembly-CSharp
+        m_MethodName: SignUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1804334822
 MonoBehaviour:
   m_ObjectHideFlags: 0
