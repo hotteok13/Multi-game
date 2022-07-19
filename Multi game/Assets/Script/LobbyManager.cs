@@ -83,4 +83,34 @@ public class LobbyManager : MonoBehaviourPunCallbacks
             room.GetComponent<infomation>().SetInfo(info.Name, info.PlayerCount, info.MaxPlayers);
         }
     }
+
+    void UpdateRoom(List<RoomInfo> roomList)
+    {
+        for(int i = 0; i < roomList.Count; i++)
+        {
+            if (RoomCatalog.ContainsKey(roomList[i].Name))
+            {
+                if (roomList[i].RemovedFromList)
+                {
+                    RoomCatalog.Remove(roomList[i].Name);
+                    continue;
+                }
+            }
+
+            RoomCatalog[roomList[i].Name] = roomList[i];
+        }
+    }
+
+    public override void OnJoinRoomFailed(short returnCode, string message)
+    {
+        Debug.Log($"JoinRoom Filed {returnCode}:{message}");
+    }
+
+    public override void OnRoomListUpdate(List<RoomInfo> roomList)
+    {
+        AllDeleteRoom();
+        UpdateRoom(roomList);
+        CreateRoomObjcet();
+
+    }
 }

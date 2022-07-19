@@ -474,7 +474,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 122437009}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 600197392}
+        m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
+        m_MethodName: OnClickCreateRoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &122437009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -933,12 +945,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8049157b18c344da159736123c812b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomName: {fileID: 0}
-  RoomPerson: {fileID: 0}
-  RoomCreate: {fileID: 0}
-  RoomJoin: {fileID: 0}
-  RoomPrefab: {fileID: 0}
-  RoomContect: {fileID: 0}
+  RoomName: {fileID: 1204915659}
+  RoomPerson: {fileID: 17685185}
+  RoomCreate: {fileID: 122437008}
+  RoomJoin: {fileID: 1522274554}
+  RoomPrefab: {fileID: 5560246679637709830, guid: 10dc4c6b5dda78441bfecc17e9850f38, type: 3}
+  RoomContect: {fileID: 447349060}
 --- !u!1 &737555042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,7 +1179,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: Room Person
 --- !u!222 &886302448
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1629,7 +1641,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1522274555}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 600197392}
+        m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
+        m_MethodName: OnClickJoinRoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1522274555
 MonoBehaviour:
   m_ObjectHideFlags: 0
