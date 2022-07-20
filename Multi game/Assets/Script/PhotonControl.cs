@@ -27,6 +27,11 @@ public class PhotonControl : MonoBehaviourPun
     {
         if (!photonView.IsMine) return;
 
+        if (transform.position.y < 0)
+        {
+            transform.position = new Vector3(Random.Range(0, 4), 1, Random.Range(0, 4));
+        }
+
         Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
         transform.Translate(dir * speed * Time.deltaTime);
